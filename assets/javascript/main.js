@@ -30,9 +30,18 @@ var app = new Vue
                 this.indice++;
                 if(this.indice == this.immagini.length)
                 {
-                    this.indice=0;
+                    this.indice = 0;
                 }
                 console.log(this.indice+1)
+            },
+            previousPhoto: function()
+            {
+                this.indice--;
+                if(this.indice < 0)
+                {
+                    this.indice = this.immagini.length-1;
+                }
+                console.log(this.indice)
             }
         }
     }

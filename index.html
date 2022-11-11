@@ -30,7 +30,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="text-center">
-          <i class="fa-solid fa-angle-left fs-1"></i>
+          <i class="fa-solid fa-angle-left fs-1" @click="previousPhoto"></i>
           <img :src="immagini[indice]" alt="Immagine Slider" class="w-75 mb-3">
           <i class="fa-solid fa-angle-right fs-1" @click="nextPhoto"></i>
         </div>
