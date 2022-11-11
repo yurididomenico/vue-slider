@@ -17,18 +17,22 @@ var app = new Vue
         {
             immagini: 
             [
-                "./assets/img/img_01.jpg",
                 "./assets/img/img_02.jpg",
                 "./assets/img/img_03.jpg",
                 "./assets/img/img_04.jpg"
             ],
-            i: 0
+            indice: 0,
         },
         methods:
         {
             nextPhoto: function()
             {
-                this.i++;
+                this.indice++;
+                if(this.indice == this.immagini.length)
+                {
+                    this.indice=0;
+                }
+                console.log(this.indice+1)
             }
         }
     }
