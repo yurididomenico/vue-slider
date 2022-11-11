@@ -23,25 +23,28 @@
   <div class="bg-light bg-gradient shadow mb-5">
     <h1 class="container py-3">YDD Slider</h1>
   </div>
-  
-  <!-- Slider -->
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="text-center">
-        <i class="fa-solid fa-angle-left fs-1"></i>
-        <img src="https://picsum.photos/800/400" alt="" class="w-75 mb-3">
-        <i class="fa-solid fa-angle-right fs-1"></i>
-      </div>
-      
-    </div>
-    <div class="row text-center">
 
-      <div>
-        <i class="fa-solid fa-circle"></i>
-        <i class="fa-solid fa-circle mx-2"></i>
-        <i class="fa-solid fa-circle"></i>
-      </div>
+  <div id="root">
 
+    <!-- Slider -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="text-center">
+          <i class="fa-solid fa-angle-left fs-1"></i>
+          <img :src="immagini" alt="Immagine Slider" class="w-75 mb-3">
+          <i class="fa-solid fa-angle-right fs-1"></i>
+        </div>
+
+      </div>
+      <div class="row text-center">
+
+        <div>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-circle mx-2"></i>
+          <i class="fa-solid fa-circle"></i>
+        </div>
+
+      </div>
     </div>
   </div>
 
