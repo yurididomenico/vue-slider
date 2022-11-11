@@ -15,11 +15,21 @@ var app = new Vue
         el: '#root',
         data: 
         {
-            immagini: "https://picsum.photos/800/400"
+            immagini: 
+            [
+                "./assets/img/img_01.jpg",
+                "./assets/img/img_02.jpg",
+                "./assets/img/img_03.jpg",
+                "./assets/img/img_04.jpg"
+            ],
+            i: 0
         },
         methods:
         {
-
+            nextPhoto: function()
+            {
+                this.i++;
+            }
         }
     }
 );
