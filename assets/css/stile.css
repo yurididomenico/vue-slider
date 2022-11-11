@@ -12,14 +12,17 @@
 }
 img
 {
-  display: block;
+  /* display: block; */
 }
 a
 {
   color: black;
 }
 /* |||||||||| INIZIO |||||||||| */
-
+body
+{
+  background-color: rgb(174, 199, 247);
+}
 
 /* |||||||||| HEADER |||||||||| */
 
@@ -30,11 +33,21 @@ a
 
 
 /* |||||||||| MAIN |||||||||| */
-
+.fa-circle
+{
+  font-size: 0.5rem;
+}
 
 
 /* |||||||||| FOOTER |||||||||| */
 
+
+
+/* |||||||||| HOVER |||||||||| */
+.fa-solid:hover
+{
+  cursor: pointer;
+}
 
 
 /* |||||||||| AREA TEST |||||||||| */
