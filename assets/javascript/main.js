@@ -17,37 +17,52 @@ var app = new Vue
         {
             immagini: 
             [
-                "./assets/img/img_02.jpg",
-                "./assets/img/img_03.jpg",
-                "./assets/img/img_04.jpg"
+                {
+                    id:1,
+                    immagine: "./assets/img/img_02.jpg"
+                },
+                {
+                    id:2,
+                    immagine: "./assets/img/img_03.jpg"
+                },
+                {
+                    id:3,
+                    immagine: "./assets/img/img_04.jpg"
+                }
             ],
-            indice: 0,
+            indice: 0
         },
         methods:
         {
-            nextPhoto: function()
+            nextPhoto()
             {
                 this.indice++;
                 if(this.indice == this.immagini.length)
                 {
                     this.indice = 0;
                 }
-                console.log(this.indice+1)
+                console.clear();
+                console.log(this.indice)
             },
-            previousPhoto: function()
+
+            previousPhoto()
             {
                 this.indice--;
                 if(this.indice < 0)
                 {
                     this.indice = this.immagini.length-1;
                 }
+                console.clear();
                 console.log(this.indice)
+            },
+
+            selezionaFoto(id)
+            {
+                this.indice = id-1
             }
         }
     }
 );
-
-
 
 
 
