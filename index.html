@@ -27,24 +27,25 @@
   <div id="root">
 
     <!-- Slider -->
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="text-center">
-          <i class="fa-solid fa-angle-left fs-1" @click="previousPhoto"></i>
-          <img :src="immagini[indice].immagine" alt="Immagine Slider" class="w-50 mb-3 mx-3">
-          <i class="fa-solid fa-angle-right fs-1" @click="nextPhoto"></i>
-        </div>
-
-      </div>
-      <div class="row text-center">
-
+    <div class="container min-vh-100 d-flex justify-content-center ">
+      
         <div>
-          <i class="fa-solid fa-circle"  @click="selezionaFoto(1)"></i>
-          <i class="fa-solid fa-circle mx-2"  @click="selezionaFoto(2)"></i>
-          <i class="fa-solid fa-circle"  @click="selezionaFoto(3)"></i>
+          <!-- Foto e Icone -->
+          <div class="text-center ">
+            <i class="fa-solid fa-angle-left fs-1" @click="previousPhoto"></i>
+            <img v-bind:src="immagini[indice].immagine" v-bind:alt="immagini[indice].descrizione" class="personal-w-800px mb-3 mx-3">
+            <i class="fa-solid fa-angle-right fs-1" @click="nextPhoto"></i>
+          </div>
+  
+          <!-- Pallini -->
+          <div class="text-center">
+            <i class="fa-solid fa-circle" @click="selezionaFoto(1)"></i>
+            <i class="fa-solid fa-circle mx-2" @click="selezionaFoto(2)"></i>
+            <i class="fa-solid fa-circle" @click="selezionaFoto(3)"></i>
+          </div>
         </div>
 
-      </div>
+      
     </div>
   </div>
 

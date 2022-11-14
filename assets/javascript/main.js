@@ -15,23 +15,33 @@ var app = new Vue
         el: '#root',
         data: 
         {
+            indice: 0,
             immagini: 
             [
                 {
                     id:1,
-                    immagine: "./assets/img/img_02.jpg"
+                    immagine: "./assets/img/img_02.jpg",
+                    descrizione: "Immagine 1",
                 },
                 {
                     id:2,
-                    immagine: "./assets/img/img_03.jpg"
+                    immagine: "./assets/img/img_03.jpg",
+                    descrizione: "Immagine 2" 
                 },
                 {
                     id:3,
-                    immagine: "./assets/img/img_04.jpg"
+                    immagine: "./assets/img/img_04.jpg",
+                    descrizione: "Immagine 3" 
                 }
-            ],
-            indice: 0
+            ]
         },
+
+        mounted()
+        {
+            this.attivaIntervallo();
+        },
+
+
         methods:
         {
             nextPhoto()
@@ -58,7 +68,14 @@ var app = new Vue
 
             selezionaFoto(id)
             {
-                this.indice = id-1
+                this.indice = id-1                
+                console.clear();
+                console.log(this.indice)
+            },
+
+            attivaIntervallo()
+            {
+                setInterval(() => {this.nextPhoto()}, 3000);
             }
         }
     }

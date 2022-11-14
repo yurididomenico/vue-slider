@@ -36,7 +36,10 @@ body
 }
 /* |||||||||| FOOTER |||||||||| */
 
-
+.testoBianco
+{
+  color: white;
+}
 
 /* |||||||||| HOVER |||||||||| */
 .fa-solid:hover
@@ -46,8 +49,10 @@ body
 
 
 /* |||||||||| AREA TEST |||||||||| */
-
-
+.personal-w-800px
+{
+  width: 800px;
+}
 
 
 /* |||||||||| AREA TEST |||||||||| */
