@@ -66,9 +66,9 @@ var app = new Vue
                 console.log(this.indice)
             },
 
-            selezionaFoto(id)
+            selezionaFoto(index)
             {
-                this.indice = id-1                
+                this.indice = index;         
                 console.clear();
                 console.log(this.indice)
             },
@@ -77,6 +77,7 @@ var app = new Vue
             {
                 setInterval(() => {this.nextPhoto()}, 3000);
             }
+
         }
     }
 );

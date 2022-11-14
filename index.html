@@ -39,10 +39,15 @@
   
           <!-- Pallini -->
           <div class="text-center">
+            <i class="fa-solid fa-circle mx-1" v-for="(el, index) in immagini" v-bind:class="(index == indice) ? 'text-white personal-fs-06 align-middle' : 'text-dark'" @click="selezionaFoto(index)"></i>
+          </div>
+
+          <!-- Pallini -->
+          <!-- <div class="text-center">
             <i class="fa-solid fa-circle" @click="selezionaFoto(1)"></i>
             <i class="fa-solid fa-circle mx-2" @click="selezionaFoto(2)"></i>
             <i class="fa-solid fa-circle" @click="selezionaFoto(3)"></i>
-          </div>
+          </div> -->
         </div>
 
       
